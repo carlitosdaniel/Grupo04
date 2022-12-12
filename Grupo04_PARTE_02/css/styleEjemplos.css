@@ -1,16 +1,15 @@
 #menu {
-    
     float:left;
     height:560px;
-    padding:20px 10px;
-    width:400px;
+    padding:20px 200px;
+    width:4500px;
   }
 
 #contenido {
     
     float:left;
     height:500px;
-    padding:5px 25px;
+    padding:10px 70px;
     width:280px;
   }
 
