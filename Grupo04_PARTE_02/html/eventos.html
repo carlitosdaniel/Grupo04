@@ -26,6 +26,8 @@
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="../css/stylesHomePage.css">
+  <link rel="stylesheet" href="../css/styleEjemplos.css">
+  <script src="../js/funcionesEjemplos.js"></script>
   <title>GRUPO04</title>
 </head>
 
@@ -52,7 +54,7 @@
 
       <center>
 
-        <h1>Componentes DOM</h1>
+        <h1>Eventos DOM</h1>
       </center>
 
       <center>
@@ -75,29 +77,29 @@
           <p>Cuando un usuario pulsa una tecla.</p>
           </p>
 
-          <div id="menu" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <p><b>Código</b></p>
-            <p>function myMove() {</p>
-              <p>let id = null;</p>
-              <p>const elem = document.getElementById("animate");</p>   
-              <p>let pos = 0;</p>
-              <p>clearInterval(id);</p>
-              <p>id = setInterval(frame, 5);</p>
-              <p>function frame() {</p>
-                <p> if (pos == 350) {</p>
-                  <p>clearInterval(id);</p>
-                  <p>} else {</p>
-                    <p>pos++; </p>
-                      <p>elem.style.top = pos + "px";</p> 
-                        <p>elem.style.right = pos + "px"; </p>
-                          <p>}</p>
-                            <p>}</p>
-                              <p>}</p>
-              
-          </div>
-
         </div>
       </center>
+
+      <div id="menu" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <br><p><b>Código</b></p>
+        <p>function myMove() {</p>
+          <p>let id = null;</p>
+          <p>const elem = document.getElementById("animate");</p>   
+          <p>let pos = 0;</p>
+          <p>clearInterval(id);</p>
+          <p>id = setInterval(frame, 5);</p>
+          <p>function frame() {</p>
+            <p> if (pos == 350) {</p>
+              <p>clearInterval(id);</p>
+              <p>} else {</p>
+                <p>pos++; </p>
+                  <p>elem.style.top = pos + "px";</p> 
+                    <p>elem.style.right = pos + "px"; </p>
+                      <p>}</p>
+                        <p>}</p>
+                          <p>}</p>
+          
+      </div>
 
     </div>
   </main>
