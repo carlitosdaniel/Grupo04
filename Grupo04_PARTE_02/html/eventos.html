@@ -64,13 +64,37 @@
 
             <u><b>onclick=JavaScript</b></u> <br><br>
 
-          <p><b>action:</b> devuelve o establece el valor del atributo HTML del mismo nombre.</p>
-          <p><b>enctype:</b> devuelve o establece el valor del atributo HTML del mismo nombre.</p>
-          <p><b> length:</b> devuelve el número de componentes que hay en el formulario.</p>
-          <p><b>method: </b>devuelve o establece el valor del atributo HTML del mismo nombre.</p>
-          <p><b>name: </b>devuelve o establece el valor del atributo HTML del mismo nombre</p>
-          <p><b>target:</b> devuelve o establece el valor del atributo HTML del mismo nombre.</p>
+            <h3>Ejemplos de Eventos HTML</h3>
+
+          <p>Cuando un usuario hace clic con el mouse.</p>
+          <p>Cuando una página web ha cargado.</p>
+          <p>Cuando se ha cargado una imagen.</p>
+          <p>Cuando el mouse se mueve sobre un elemento.</p>
+          <p>Cuando se cambia un campo de entrada.</p>
+          <p>Cuando se envía un formulario HTML.</p>
+          <p>Cuando un usuario pulsa una tecla.</p>
           </p>
+
+          <div id="menu" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <p><b>Código</b></p>
+            <p>function myMove() {</p>
+              <p>let id = null;</p>
+              <p>const elem = document.getElementById("animate");</p>   
+              <p>let pos = 0;</p>
+              <p>clearInterval(id);</p>
+              <p>id = setInterval(frame, 5);</p>
+              <p>function frame() {</p>
+                <p> if (pos == 350) {</p>
+                  <p>clearInterval(id);</p>
+                  <p>} else {</p>
+                    <p>pos++; </p>
+                      <p>elem.style.top = pos + "px";</p> 
+                        <p>elem.style.right = pos + "px"; </p>
+                          <p>}</p>
+                            <p>}</p>
+                              <p>}</p>
+              
+          </div>
 
         </div>
       </center>
