@@ -23,6 +23,7 @@
         background-size: cover;
         background-position:center ;
         overflow: hidden;
+        height: 350px;
     }
     .hero-description{
         height: 600px;
