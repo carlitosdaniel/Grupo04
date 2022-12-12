@@ -50,92 +50,155 @@
       </header>
     </div><br><br>
 
-    <div class="main">
+  
 
-      <center>
-        <h1>Eventos DOM</h1>
-      </center>
+      
+        <h1 class="text-center">Eventos DOM</h1>
+    
 
-      <center>
-        <div class="col-md-6 col-sm-6">
+        <!--Intoducción-->
+            <section id="header">
+              <div class="container mt-5">
+                  <div class="row">
+                          <div class=" col-md-6 col-sm-6">
+                            <p>
+                              Para ejecutar código cuando un usuario hace clic en un elemento, agregue código
+                              JavaScript a un atributo de evento HTML:</p><br>
+                  
+                              <u><b>onclick=JavaScript</b></u> <br><br>
+                  
+                            <h3>Ejemplos de Eventos HTML</h3>
+                            <br>
+                            <p>Cuando un usuario hace clic con el mouse.</p>
+                            <p>Cuando una página web ha cargado.</p>
+                            <p>Cuando se ha cargado una imagen.</p>
+                            <p>Cuando el mouse se mueve sobre un elemento.</p>
+                            <p>Cuando se cambia un campo de entrada.</p>
+                            <p>Cuando se envía un formulario HTML.</p>
+                            <p>Cuando un usuario pulsa una tecla.</p>
+                          </div>
+                          <br>
+                    
+                  </div>
+              </div>
+              <br><br><br>
+          </section>
 
-          <p>
-            Para ejecutar código cuando un usuario hace clic en un elemento, agregue código
-            JavaScript a un atributo de evento HTML: <br><br>
+          <!--Primer ejemplo-->
+      
+          <section id="testimonio">
+              <div class="container" >
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <h4>Ejemplo de onmouseover y onmouseout</h4>
+                </div>
+                </p>
+                
 
-            <u><b>onclick=JavaScript</b></u> <br><br>
-
-          <h3>Ejemplos de Eventos HTML</h3>
-
-          <p>Cuando un usuario hace clic con el mouse.</p>
-          <p>Cuando una página web ha cargado.</p>
-          <p>Cuando se ha cargado una imagen.</p>
-          <p>Cuando el mouse se mueve sobre un elemento.</p>
-          <p>Cuando se cambia un campo de entrada.</p>
-          <p>Cuando se envía un formulario HTML.</p>
-          <p>Cuando un usuario pulsa una tecla.</p>
-          <h4>Ejemplo de onmouseover y onmouseout</h4>
-          </p>
-
+                <div id="menu" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <br>
+                  <p><b>Código</b></p>
+                  <p> function mOver(obj) {</p>
+                  <p> obj.innerHTML = "Gracias"}</p>
+                  <p> function mOut(obj) {</p>
+                  <p> obj.innerHTML = "Pon el Raton sobre mi"}</p>
+                </div>
+                  <div id="contenido" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <br>
+                    <div onmouseover="mOver(this)" onmouseout="mOut(this)" id="eventos">
+                      Pon el Raton sobre mi</div>
+                    <br>
+                  </div>
+    
+          </section>
+          <br>
+          <!--Segundo ejemplo-->
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <br>
-            <p><b>Código</b></p>
-            <p> function mOver(obj) {</p>
-            <p> obj.innerHTML = "Gracias"}</p>
-
-
-            <p> function mOut(obj) {</p>
-            <p> obj.innerHTML = "Pon el Raton sobre mi"}</p>
-
-
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <br>
-              <div onmouseover="mOver(this)" onmouseout="mOut(this)" id="eventos">
-                Pon el Raton sobre mi</div>
-              <br>
-            </div>
-
-            <hr>
-
-            <div>
-              <h3>Ejemplos de Eventos onmousedown, onmouseup y onclick.</h3>
-            </div>
-
-            <p><b>Código</b></p>
-
-            <p> function mDown(obj) {</p>
-            <p> obj.style.backgroundColor = "#1ec5e5";</p>
-            <p> obj.innerHTML = "Liberame!";}</p>
-
-            <p> function mUp(obj) {</p>
-            <p> obj.style.backgroundColor="#D94A38";</p>
-            <p> obj.innerHTML="Gracias";}</p>
-
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <br>
-              <div onmousedown="mDown(this)" onmouseup="mUp(this)" id="eventos">
-                Haz click en mi</div>
-              <br>
-            </div>
-
-
+            <h3 class="text-center">Ejemplos de Eventos onmousedown, onmouseup y onclick.</h3>
           </div>
+          <section id="header">
+            <div class="container mt-5">
+                <div class="row">
+                        <div class=" col-md-6 col-sm-6">
+              
+                          <div id="menu" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            
+                            <p><b>Código</b></p>
+              
+                            <p> function mDown(obj) {</p>
+                            <p> obj.style.backgroundColor = "#1ec5e5";</p>
+                            <p> obj.innerHTML = "Liberame!";}</p>
+              
+                            <p> function mUp(obj) {</p>
+                            <p> obj.style.backgroundColor="#D94A38";</p>
+                            <p> obj.innerHTML="Gracias";}</p>
+                          </div>
+              
+                          <div id="contenido" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                            <br>
+                            <div onmousedown="mDown(this)" onmouseup="mUp(this)" id="eventos">
+                              Haz click en mi</div>
+                          </div>
+                        </div>
+                        </div>
+                  
+                </div>
+            </div>
+            <br>
+            <br>
+        </section>
 
 
 
-        </div>
-      </center>
+          <!--Segundo ejemplo-->
+          
+      
+          <section id="testimonio">
+              <div class="container" >
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <h3 class="text-center">Ejemplos de Eventos onmousedown, onmouseup y onclick.</h3>
+                </div>
+    
+                <div id="menu" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  
+                  <p><b>Código</b></p>
+    
+                  <p> function mDown(obj) {</p>
+                  <p> obj.style.backgroundColor = "#1ec5e5";</p>
+                  <p> obj.innerHTML = "Liberame!";}</p>
+    
+                  <p> function mUp(obj) {</p>
+                  <p> obj.style.backgroundColor="#D94A38";</p>
+                  <p> obj.innerHTML="Gracias";}</p>
+                </div>
+    
+                <div id="contenido" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                  <br>
+                  <div onmousedown="mDown(this)" onmouseup="mUp(this)" id="eventos">
+                    Haz click en mi</div>
+                  <br>
+                </div>
+              </div>
+          </section>
+
+
+          
+      
+       
+
+        </main>
 
 
 
 
 
-    </div>
-
-  </main>
+        
 
 
-  </div>
+
+
+
+   
+
 </body>
 
 </html>

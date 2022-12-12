@@ -56,34 +56,38 @@
       <center>
         <br>
         <h1>Animaciones DOM</h1>
+        <br>
       </center>
 
       <div id="menu" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
         <p><b>Código</b></p>
-        <p>function myMove() {</p>
-        <p>let id = null;</p>
-        <p>const elem = document.getElementById("animate");</p>
-        <p>let pos = 0;</p>
-        <p>clearInterval(id);</p>
-        <p>id = setInterval(frame, 5);</p>
-        <p>function frame() {</p>
-        <p> if (pos == 350) {</p>
-        <p>clearInterval(id);</p>
-        <p>} else {</p>
-        <p>pos++; </p>
-        <p>elem.style.top = pos + "px";</p>
-        <p>elem.style.right = pos + "px"; </p>
-        <p>}</p>
-        <p>}</p>
-        <p>}</p>
+        <pre> 
+          <code>
+              function myMove() {
+                let id = null;
+                const elem = document.getElementById("animate");
+                let pos = 0;
+                clearInterval(id);
+                id = setInterval(frame, 5);
+                function frame() {
+                if (pos == 350) {
+                clearInterval(id);
+                } else {
+                pos++; 
+                elem.style.top = pos + "px";
+                elem.style.right = pos + "px"; 
+                  }
+                }
+              } 
+          </code> 
+      </pre>
       </div>
       <div id="contenido" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <br><br><br>
         <div id="container">
           <div id="animate"></div>
         </div>
         <br>
-        <button type="submit" onclick="myMove()" class="btn btn-info">Intentalo ahora!!</button>
+        <center><button type="submit" onclick="myMove()" class="btn btn-info">Intentalo ahora!!</button></center>
         <p id="texto"></p>
       </div>
 
@@ -94,7 +98,6 @@
   </main>
 
 
-  </div>
 </body>
 
 </html>
