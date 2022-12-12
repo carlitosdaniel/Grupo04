@@ -1,3 +1,4 @@
+//Animaciones
 function myMove() {
     let id = null;
     const elem = document.getElementById("animate");   
@@ -14,3 +15,12 @@ function myMove() {
       }
     }
   }
+
+//Eventos
+function mOver(obj) {
+  obj.innerHTML = "Gracias"
+}
+
+function mOut(obj) {
+  obj.innerHTML = "Pon el Raton sobre mi"
+}
