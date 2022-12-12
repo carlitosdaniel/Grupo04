@@ -77,41 +77,58 @@
           <h4>Ejemplo de onmouseover y onmouseout</h4>
           </p>
 
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <br>
+            <p><b>Código</b></p>
+            <p> function mOver(obj) {</p>
+            <p> obj.innerHTML = "Gracias"}</p>
+
+
+            <p> function mOut(obj) {</p>
+            <p> obj.innerHTML = "Pon el Raton sobre mi"}</p>
+
+
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <br>
+              <div onmouseover="mOver(this)" onmouseout="mOut(this)" id="eventos">
+                Pon el Raton sobre mi</div>
+              <br>
+            </div>
+
+            <hr>
+
+            <div>
+              <h3>Ejemplos de Eventos onmousedown, onmouseup y onclick.</h3>
+            </div>
+
+            <p><b>Código</b></p>
+
+            <p> function mDown(obj) {</p>
+            <p> obj.style.backgroundColor = "#1ec5e5";</p>
+            <p> obj.innerHTML = "Liberame!";}</p>
+
+            <p> function mUp(obj) {</p>
+            <p> obj.style.backgroundColor="#D94A38";</p>
+            <p> obj.innerHTML="Gracias";}</p>
+
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+              <br>
+              <div onmousedown="mDown(this)" onmouseup="mUp(this)" id="eventos">
+                Haz click en mi</div>
+              <br>
+            </div>
+
+
+          </div>
+
+
+
         </div>
       </center>
 
-      <div id="menu" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <br>
-        <p><b>Código</b></p>
-        <p> function mOver(obj) {</p>
-        <p> obj.innerHTML = "Gracias"</p>
-        <p> }</p>
 
-        <p> function mOut(obj) {</p>
-        <p> obj.innerHTML = "Pon el Raton sobre mi"</p>
-        <p> }</p> <br><br>
 
-        <center><div>
-          <h3>Ejemplos de Eventos onmousedown, onmouseup and onclick.</h3>
-        </div></center>
 
-        <p><b>Código</b></p>
-        <p> function mOver(obj) {</p>
-        <p> obj.innerHTML = "Gracias"</p>
-        <p> }</p>
-
-        <p> function mOut(obj) {</p>
-        <p> obj.innerHTML = "Pon el Raton sobre mi"</p>
-        <p> }</p>
-
-      </div>
-
-      <div id="contenido" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <br><br>
-        <div onmouseover="mOver(this)" onmouseout="mOut(this)" id="eventos">
-        Pon el Raton sobre mi</div>
-        <br>
-      </div>
 
     </div>
 

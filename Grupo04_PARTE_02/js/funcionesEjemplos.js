@@ -24,3 +24,13 @@ function mOver(obj) {
 function mOut(obj) {
   obj.innerHTML = "Pon el Raton sobre mi"
 }
+
+function mDown(obj) {
+  obj.style.backgroundColor = "#1ec5e5";
+  obj.innerHTML = "Liberame";
+}
+
+function mUp(obj) {
+  obj.style.backgroundColor="#D94A38";
+  obj.innerHTML="Gracias!!";
+}
