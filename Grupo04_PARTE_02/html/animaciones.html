@@ -27,6 +27,8 @@
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="../css/stylesHomePage.css">
+  <link rel="stylesheet" href="../css/styleEjemplos.css">
+  <script src="../js/funcionesEjemplos.js"></script>
   <title>GRUPO04</title>
 </head>
 
@@ -52,59 +54,40 @@
 
       <center>
         <br>
-        <h1>CSS DOM</h1>
+        <h1>Animaciones DOM</h1>
       </center>
 
-
-      <center>
-        <div class="col-md-6 col-sm-6">
-
-          <p class="mt-5">
-            Para cambiar el estilo de un elemento HTML, use esta sintaxis: <br><br>
-
-            <b>document.getElementById(id).style.property = new style</b> <br><br>
-
-            El siguiente ejemplo cambia el estilo de un (p) elemento:
-          </p>
-
-          <img src="../img/ejmEstilos.png" class="img-fluid" alt="">
-          <br>
-          <p>Haz Click en el siguiente boton para intentar ahora tú!</p>
-
-          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_change_style" target="_blank"
-            class="btn btn-outline-info header-btn btn-lg mt-2">Vamos a intentarlo!</a>
-
-          <hr>
-
-          <h4><b> Uso de eventos</b></h4>
-
-          <p>
-            El HTML DOM le permite ejecutar código cuando ocurre un evento. <br>
-
-            Los eventos son generados por el navegador cuando "le suceden cosas" a los elementos HTML: <br>
-
-            - Se hace clic en un elemento. <br>
-            - La página ha cargado. <br>
-            - Los campos de entrada se cambian <br><br>
-
-            Aprenderá más acerca de los eventos en el próximo capítulo de este tutorial. <br>
-
-            Este ejemplo cambia el estilo del elemento HTML con id="id1", cuando el usuario hace clic en un botón:
-
-           
-          </p>
-
-          <img src="../img/ejm02Estilos.png" class="img-fluid" alt="">
-          <br>
-          <p>Haz Click en el siguiente boton para intentar ahora tu!</p>
-
-          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_color2" target="_blank"
-            class="btn btn-outline-info header-btn btn-lg mt-2">Vamos a intentarlo!</a>
-            <br>
-            <br>
-
+      <div id="menu" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <p><b>Código</b></p>
+        <p>function myMove() {</p>
+          <p>let id = null;</p>
+          <p>const elem = document.getElementById("animate");</p>   
+          <p>let pos = 0;</p>
+          <p>clearInterval(id);</p>
+          <p>id = setInterval(frame, 5);</p>
+          <p>function frame() {</p>
+            <p> if (pos == 350) {</p>
+              <p>clearInterval(id);</p>
+              <p>} else {</p>
+                <p>pos++; </p>
+                  <p>elem.style.top = pos + "px";</p> 
+                    <p>elem.style.right = pos + "px"; </p>
+                      <p>}</p>
+                        <p>}</p>
+                          <p>}</p>
+      </div>
+      <div id="contenido" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <br><br><br>
+        <div id ="container">
+          <div id ="animate"></div>
         </div>
-      </center>
+        <br>
+            <button type="submit" onclick="myMove()" class="btn btn-info">Intentalo ahora!!</button>
+            <p id="texto"></p>
+      </div>
+
+
+      
 
     </div>
   </main>

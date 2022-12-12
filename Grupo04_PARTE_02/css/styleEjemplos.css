@@ -1,0 +1,34 @@
+#menu {
+    
+    float:left;
+    height:560px;
+    padding:20px 10px;
+    width:400px;
+  }
+
+#contenido {
+    
+    float:left;
+    height:500px;
+    padding:5px 25px;
+    width:280px;
+  }
+
+  
+  /*https://www.abrirllave.com/html/divisiones.php*/
+  /*https://es.stackoverflow.com/questions/175420/mover-div-a-la-derecha*/
+  
+
+/*animaciones*/
+  #container {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: yellow;
+  }
+  #animate {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: red;
+  }
