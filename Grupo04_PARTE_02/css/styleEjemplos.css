@@ -51,3 +51,8 @@
     padding: 40px ;   /*Controlamos el espacio arriba y abajo*/
     height: 760px;
   }
+
+  .centrarh1
+  {
+    text-align: center;
+  }
