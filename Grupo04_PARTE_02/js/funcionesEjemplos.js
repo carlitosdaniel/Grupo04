@@ -45,3 +45,19 @@ function navegar()
 function nodo() {
   document.getElementById("id04").innerHTML = document.getElementById("id03").firstChild.nodeValue;
 }
+
+//ListadeNodos
+function listaNodos() {
+  const myNodelist = document.querySelectorAll("p");
+  for (let i = 0; i < myNodelist.length; i++) {
+    myNodelist[i].style.color = "blue";
+  }
+}
+
+//Colecciones
+function colecciones() {
+  const myNodelist = document.querySelectorAll("h2");
+  for (let i = 0; i < myNodelist.length; i++) {
+    myNodelist[i].style.color = "purple";
+  }
+}

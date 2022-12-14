@@ -26,7 +26,8 @@
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="../css/stylesHomePage.css">
-  <title>GRUPO04</title> 
+  <script src="../js/funcionesEjemplos.js"></script>
+  <title>GRUPO04</title>
 </head>
 
 <body>
@@ -39,86 +40,81 @@
     <!-- NAVIGATION -->
     <div>
       <header id="home">
-          <div class="w3-top w3-light-gray">
-              <div class="w3-row w3-padding w3-white">
-                  <div class="w3-col s3">
-                     <a href="../html/homePage.html" class="w3-button w3-block w3-white" > <img src="../img/iconocasa.png" width="20px" height="20px"> Home</a>
-                  </div>
+        <div class="w3-top w3-light-gray">
+          <div class="w3-row w3-padding w3-white">
+            <div class="w3-col s3">
+              <a href="../html/homePage.html" class="w3-button w3-block w3-white"> <img src="../img/iconocasa.png"
+                  width="20px" height="20px"> Home</a>
+            </div>
       </header>
-  </div><br><br>
+    </div><br><br>
 
-    <div class="main">
-      <center>
-        <br>
-        <h1>Métodos DOM</h1>
-      </center>
+    <h1 class="text-center">Colecciones DOM</h1>
+    <section id="header">
+      <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+          <div class=" col-md-6 col-sm-6">
 
-
-      <center>
-        <div class="col-md-6 col-sm-6">
-          <br>
-          <h4>La interfaz de programación DOM</h4>
-
-          <p>
-            Se puede acceder al HTML DOM con JavaScript (y con otros lenguajes de programación). <br><br>
-
-            En el DOM, todos los elementos HTML se definen como objetos. <br><br>
-
-            La interfaz de programación son las propiedades y métodos de cada objeto. <br><br>
-
-            Una propiedad es un valor que puede obtener o establecer (como cambiar el contenido de un elemento HTML).
-            <br><br>
-
-            Un método es una acción que puede realizar (como agregar o eliminar un elemento HTML).
-          </p>
-
-          <h3>Ejemplo</h3>
-
-          <img src="../img/ejmMetodos.png" class="img-fluid" alt="">
-
-          <p>Haz Click en el siguiente boton para intentar ahora tú!</p>
-
-          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_method" target="_blank"
-            class="btn btn-outline-dark header-btn btn-lg mt-2">Vamos a intentarlo!</a>
-
-          <p class="mt-5">
-            <hr>
-            <b> El método getElementById</b> <br><br>
-            La forma más común de acceder a un elemento HTML es usar el id del elemento. <br>
-
-            En el ejemplo anterior, el getElementByIdmétodo utilizado id="demo"para encontrar el elemento.
-
-          </p>
-
-          <p>
-            <hr>
-            <b> La propiedad HTML interior </b> <br><br>
-            La forma más sencilla de obtener el contenido de un elemento es mediante la innerHTMLpropiedad. <br>
-
-            La innerHTMLpropiedad es útil para obtener o reemplazar el contenido de los elementos HTML. <br><br>
-
-            <b>La innerHTMLpropiedad se puede usar para obtener o cambiar cualquier elemento HTML, incluidos "html" y
-              "body".</b>
-          </p>
-          <br>
-          <br>
-          <hr>
-          <p><b>Aprende también con un video de Códigos de Programación</b></p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/RcQVT1smEFg" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+            <h3>El objeto HTMLCollection</h3>
             <br>
-            <br>
+            <p>El <b>getElementsByTagName()</b> método devuelve un <b>HTMLCollectionobjeto</b>.</p>
+            <p>Un <b>HTMLCollectionobjeto</b> es una lista similar a una matriz (colección) de elementos HTML.</p>
 
+            <br>
+          </div>
         </div>
-      </center>
+      </div>
+    </section>
 
-    </div>
+    <section id="testimonio">
+      <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <h4>Ejemplo de HTML Collection Longitud</h4>
+          <p>Cambia el color del texto de todos los elementos h2:</p>
+        </div>
+        </p>
+
+
+        <div id="menu" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <br>
+          <p><b>Código</b></p>
+          <pre>
+          <code>
+
+            Esto es una prueba con Colecciones
+
+            El Bicho SIIIUU!!
+
+            Haga Click en el botón para cambiar el color de todos los elementos h2.
+            
+            <p>Script</p>
+            function colecciones() {
+              const myNodelist = document.querySelectorAll("p");
+              for (let i = 0; i < myNodelist.length; i++) {
+                myNodelist[i].style.color = "red";
+              }
+            }
+          </code> 
+      </pre>
+        </div>
+
+        <div id="contenido" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <br>
+
+          <h2>Esto es una prueba con Colecciones</h2>
+
+          <h2>El Bicho SIIIUU!!</h2>
+
+          <h2>Haga Click en el botón para cambiar el color de todos los elementos h2.</h2>
+
+          <button onclick="colecciones()">Intentalo ahora!</button>
+
+          <br>
+        </div>
+
+    </section>
+    <br>
   </main>
-
-
-  </div>
 </body>
 
 </html>

@@ -26,6 +26,7 @@
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="../css/stylesHomePage.css">
+  <script src="../js/funcionesEjemplos.js"></script>
   <title>GRUPO04</title>
 </head>
 
@@ -39,134 +40,86 @@
     <!-- NAVIGATION -->
     <div>
       <header id="home">
-          <div class="w3-top w3-light-gray">
-              <div class="w3-row w3-padding w3-white">
-                  <div class="w3-col s3">
-                     <a href="../html/homePage.html" class="w3-button w3-block w3-white" > <img src="../img/iconocasa.png" width="20px" height="20px"> Home</a>
-                  </div>
+        <div class="w3-top w3-light-gray">
+          <div class="w3-row w3-padding w3-white">
+            <div class="w3-col s3">
+              <a href="../html/homePage.html" class="w3-button w3-block w3-white"> <img src="../img/iconocasa.png"
+                  width="20px" height="20px"> Home</a>
+            </div>
       </header>
-  </div><br><br>
+    </div><br><br>
 
-    <div class="main">
+    <h1 class="text-center">Lista de Nodos DOM</h1>
+    <section id="header">
+      <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+          <div class=" col-md-6 col-sm-6">
 
-      <center>
-        <br>
-        <h1>HTML DOM</h1>
-      </center>
-
-
-      <center>
-        <div class="col-md-6 col-sm-6">
-
-          <p class="mt-5">
-            Por lo tanto para cambiar el contenido de un elemento HTML, utilice la siguiente sintaxis: <br><br>
-
-            <b>document.getElementById(id).innerHTML = new HTML</b>
-
-            Este ejemplo cambia el contenido de un parrafo (p) elemento:
-          </p>
-
-          <img src="../img/ejemplo01HTML.png" class="img-fluid" alt="">
-
-          <p>Haz Click en el siguiente boton para intentar ahora tu!</p>
-
-          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_change_innerhtml" target="_blank"
-            class="btn btn-outline-info header-btn btn-lg mt-2">Vamos a intentarlo!</a>
-          <br>
-          <p>
-            <b> Ejemplo explicado: </b> <br><br>
-
-            - El documento HTML anterior contiene un elemento con id="p1" <br>
-            - Usamos el HTML DOM para obtener el elemento conid="p1" <br>
-            - Un JavaScript cambia el contenido ( innerHTML) de ese elemento a "¡Nuevo Párrafo!"
-          </p>
-
-          <hr>
-
-          <p>
-            Este ejemplo cambia el contenido de un título (h1) elemento:
-          </p>
-
-          <img src="../img/ejemTitulo.png" class="img-fluid" alt="">
-
-          <p>Haz Click en el siguiente boton para intentar ahora tu!</p>
-
-          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_innerhtml" target="_blank"
-            class="btn btn-outline-info header-btn btn-lg mt-2">Vamos a intentarlo!</a>
-
-          <p>
-            <b> Ejemplo explicado: </b> <br><br>
-
-            - El documento HTML anterior contiene un h1 elemento conid="id01" <br>
-            - Usamos el HTML DOM para obtener el elemento conid="id01". <br>
-            - Un JavaScript cambia el contenido ( innerHTML) de ese elemento a "Nuevo encabezado"
-          </p>
-
-          <hr>
-
-          <h4>Cambiar el valor de un atributo</h4>
-
-          <p>
-            Para cambiar el valor de un atributo HTML, utilice esta sintaxis: <br><br>
-
-            <b>document.getElementById(id).attribute = new value</b>
-
-            Este ejemplo cambia el valor del atributo src de una imagen elemento:
-          </p>
-
-          <img src="../img/ejmImagen.png" class="img-fluid" alt="">
-
-          <p>Haz Click en el siguiente boton para intentar ahora tu!</p>
-
-          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_image" target="_blank"
-            class="btn btn-outline-info header-btn btn-lg mt-2">Vamos a intentarlo!</a>
-
-          <p>
-            <b> Ejemplo explicado: </b> <br><br>
-
-            - El documento HTML anterior contiene un img elemento conid="myImage" <br>
-            - Usamos el HTML DOM para obtener el elemento conid="myImage" <br>
-            - Un JavaScript cambia el srcatributo de ese elemento de "smiley.gif" a "landscape.jpg"
-          </p>
-
-          <hr>
-
-          <h4>Contenido HTML dinámico</h4>
-
-          <p>
-            JavaScript puede crear contenido HTML dinámico:
-          </p>
-
-          <img src="../img/ejmHtmlDinamico.png" class="img-fluid" alt="">
-
-          <p>Haz Click en el siguiente boton para intentar ahora tu!</p>
-
-          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_date" target="_blank"
-            class="btn btn-outline-info header-btn btn-lg mt-2">Vamos a intentarlo!</a>
-
-          <hr>
-
-          <h4>documento.escribir()</h4>
-
-          <p>
-            En JavaScript, document.write()se puede usar para escribir directamente en el flujo de salida HTML:
-          </p>
-
-          <img src="../img/ejmDocEscribir.png" class="img-fluid" alt="">
-
-          <p>Haz Click en el siguiente boton para intentar ahora tu!</p>
-
-          <a href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_dom_write" target="_blank"
-            class="btn btn-outline-info header-btn btn-lg mt-2">Vamos a intentarlo!</a>
-
+            <h3>El objeto HTML DOM NodeList</h3>
+            <br>
+            <p>Un <b>NodeList</b> objeto es una lista (colección) de nodos extraídos de un documento, es casi lo mismo
+              que un "HTML collections"</p>
+            <p>Algunos navegadores (más antiguos) devuelven un objeto NodeList en lugar de HTMLCollection para métodos
+              como <b>getElementsByClassName()</b>.</p>
+            <p>Todos los navegadores devuelven un objeto NodeList para la propiedad <b>childNodes</b>. </p>
+            <p>La mayoría de los navegadores devuelven un objeto NodeList para el método <b>querySelectorAll()</b>.</p>
+            <br>
+          </div>
         </div>
-      </center>
+      </div>
+    </section>
 
-    </div>
+    <section id="testimonio">
+      <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <h4><b>Ejemplo de Longitud de la lista de nodos HTML DOM</b></h4>
+          <p>Cambiar el color de todos los elementos p en una lista de nodos:</p>
+        </div>
+        </p>
+
+
+        <div id="menu" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <br>
+          <p><b>Código</b></p>
+          <pre>
+            <code>
+
+              JavaScript HTML DOM
+
+              Hola Mundo!
+
+              Buenas Inge
+
+              Haga Click en el botón para cambiar el color de todos los elementos. 
+              
+              <p>Script</p>
+              function listaNodos() {
+                const myNodelist = document.querySelectorAll("p");
+                for (let i = 0; i < myNodelist.length; i++) {
+                  myNodelist[i].style.color = "red";
+                }
+              }
+            </code> 
+        </pre>
+        </div>
+
+        <div id="contenido" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <br>
+
+          <p>Hola Aula</p>
+
+          <p>Buenas Inge :(</p>
+
+          <p>Haga Click en el botón para cambiar el color de todos los elementos p.</p>
+
+          <button onclick="listaNodos()">Intentalo ahora!</button>
+
+          <br>
+        </div>
+
+    </section>
   </main>
 
-
-  </div>
 </body>
 
 </html>
