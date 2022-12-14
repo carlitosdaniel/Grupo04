@@ -92,3 +92,15 @@ function miTerceraFuncion() {
 }
 //http://www.mywonderland.es/curso_js/addevent/index.html
 
+
+//Nodos
+
+function añadirNodos()
+{
+  const para = document.createElement("p");
+  const node = document.createTextNode("Este es un nuevo texto.");
+  para.appendChild(node);
+  const element = document.getElementById("div1");
+  const child = document.getElementById("p1");
+  element.insertBefore(para,child);
+}
