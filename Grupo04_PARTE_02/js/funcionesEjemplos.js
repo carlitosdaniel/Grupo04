@@ -37,9 +37,7 @@ function mUp(obj) {
 
 //Navegacion
 
-function nav() {
+function navegar() 
+{
   document.getElementById("id02").innerHTML = document.getElementById("id01").childNodes[0].nodeValue;
-  document.write("Mi primera")
-  
-  
 }
