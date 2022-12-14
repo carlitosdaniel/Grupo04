@@ -41,3 +41,7 @@ function navegar()
 {
   document.getElementById("id02").innerHTML = document.getElementById("id01").childNodes[0].nodeValue;
 }
+
+function nodo() {
+  document.getElementById("id04").innerHTML = document.getElementById("id03").firstChild.nodeValue;
+}

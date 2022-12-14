@@ -88,130 +88,43 @@
 
         <div id="contenido" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <br>
-            <h1 id="id01">Aplicaciones de Tecnologías Web</h1>
-            <button type="submit" onclick="navegar()">Replicar</button>
-            <p id="id02"></p>
-           
-        </form>
-          
+          <h1 id="id01">Aplicaciones de Tecnologías Web</h1>
+          <button type="submit" onclick="navegar()">Intentalo ahora!</button>
+          <p id="id02"></p>
+
           <br>
         </div>
 
     </section>
     <br>
 
-    <center>
-      <div class="col-md-6 col-sm-6">
-        <h4></h4><br>
+    <section id="testimonio">
+      <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <h3 class="text-center">Ejemplo de navegación entre nodos con <b>firstChild</b></h3>
+        </div>
 
-        <p>
+        <div id="menu" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
 
-        </p>
+          <p><b>Código</b></p>
 
+          <pre>
+            <code>              
+              <p>Script</p>
+              document.getElementById("id02").innerHTML = document.getElementById("id01").firstChild.nodeValue;
+            </code> 
+        </pre>
+        </div>
 
-        <img src="../img/arbolObjetos.png" class="img-fluid" alt="">
-
-
-
-
-        <p class="mt-5">
-          <b> El estándar W3C DOM se divide en 3 partes diferentes: </b> <br><br>
-        <ul>
-
-          <li>
-            <b> Core DOM:</b> modelo estándar para todos los tipos de documentos
-          </li>
-          <li>
-            <b> XML DOM: </b>modelo estándar para documentos XML
-          </li>
-          <li>
-            <b> HTML DOM: </b>modelo estándar para documentos HTML
-          </li>
-        </ul>
-
-
-        </p>
-        <hr>
-        <p class="mt-5"><b> ¿Como podemos modificarlo? </b> <br><br>
-
-          Tenemos distintos elementos, propiedades, métodos y eventos para ello. <br><br>
-
-          Una propiedad es un valor de un elemento HTML un que podemos obtener o settear, un método es una
-          acción
-          que podemos realizar sobre esa propiedad y un evento es como reaccionamos ante una acción específica
-          sobre
-          algún elemento de nuestra página. <br><br>
-
-          Por ejemplo en el siguiente código HTML:
-        </p>
-
-        <img src="../img/ejemploIntr.png" class="img-fluid" alt="">
-
-        <p class="mt-5">
-          Nos vamos a enfocar en la linea 5 del código: <br><br>
-
-          El elemento document es uno de los objetos más importantes en el DOM, este representa nuestra página
-          renderizada. El objeto window es otro de los objetos más importantes, es el elemento raíz de nuestra
-          página,
-          o bien el global object en Javascript y document es hijo del mismo. Si queremos acceder a cualquier
-          elemento
-          HTML de nuestra página empezamos desde el objeto document. En nuestro ejemplo vemos el método
-          getElementById, el cual como el nombre menciona, obtiene el elemento HTML que contenga el id “demo” y
-          sobre
-          la property innerHTML, la cual nos devuelve el contenido de dicho elemento, ya sea un valor
-          determinado, en
-          este caso “Techie DOM”.
-        </p>
-
-        <p class="mt-5">
+        <div id="contenido" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
           <br>
+          <h1 id="id03">LEO MESSI</h1>
+          <button type="submit" onclick="nodo()">Intentalo ahora</button><br><br>
+          <p id="id04"></p>
           <br>
-          <br>
-          <hr>
-          <b><u>Métodos de búsqueda:</u></b> <br><br>
-          <b> getElementById: </b> Busca por id <br>
-          <b>getElementsByName:</b> Busca por el name value <br>
-          <b>getElementsByTagName:</b> Busca por el nombre del tag <br>
-          <b>getElementsByClassName:</b> Busca por clase <br>
-          <b>querySelector:</b> Busca por selector CSS <br>
-          <b>querySelectorAll:</b> Busca todos los selectores CSS.
-        </p>
-
-        <p class="mt-5">
-          <hr>
-          <b><u>Properties: </u></b> <br><br>
-          <b>attributes:</b> Nos devuelve todos los atributos que un elemento tenga, pudiendo cambiar cada uno
-          de
-          ellos. <br>
-          <b>className:</b> Devuelve el nombre de la clase del elemento seleccionado.<br>
-          <b>innerHTML:</b> Con innerHTML podemos ver y cambiar el contenido del texto del elemento.<br>
-          <b>outerHTML:</b> Nos devuelve no solo el texto si no los tags que lo envuelvan.<br>
-          <b>textContent:</b> Similar a innerHTML pero devuelve el contenido de texto del elemento seleccionado
-          y sus
-          descendientes.<br>
-          <b>style:</b> Nos devuelve el estilo del elemento y nos permite modificar el estilado del mismo.
-        </p>
-
-        <p class="mt-5">
-          <hr>
-          <b><u>Eventos: </u></b> <br><br>
-          <b>onClick: </b>Cuando clickeamos el elemento. <br>
-          <b>resize: </b>Cuando resizeamos la página <br>
-          <b>onmouseover: </b>Cuando pasamos el puntero por encima del elemento. <br>
-          <b>onmouseout: </b>Cuando sacamos el puntero de encima.
-        </p>
-
-        <p class="mt-5">
-          En otras palabras: <b> el HTML DOM es un estándar sobre cómo obtener, cambiar, agregar o eliminar
-            elementos
-            HTML.</b>
-        </p>
-        <br>
-        <br>
-
+        </div>
       </div>
-    </center>
-
+    </section>
 
   </main>
 
