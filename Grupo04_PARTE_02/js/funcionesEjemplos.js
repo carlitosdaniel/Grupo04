@@ -61,3 +61,34 @@ function colecciones() {
     myNodelist[i].style.color = "purple";
   }
 }
+
+//Event Listener
+  //Para el ejemplo 1
+function añadirEventosListener()
+{
+  document.getElementById("myBtn").addEventListener("click", function() {
+    document.getElementById("myBtn").innerHTML="Aplicaciones de Tecnologías Web";
+  });
+}
+
+  //Para el ejemplo 2
+var x = document.getElementById("myBtn");
+var x2 = document.getElementById("myBtn2");
+var x3 = document.getElementById("myBtn3");
+x.addEventListener("mouseover", myFunction);
+x2.addEventListener("click", mySecondFunction);
+x3.addEventListener("mouseout", myThirdFunction);
+
+function miPrimeraFuncion() {
+  document.getElementById("demo").innerHTML += "El ratón esta sobre el Botón!<br>";
+}
+
+function miSegundaFuncion() {
+  document.getElementById("demo").innerHTML += "Click sobre el botón!<br>";
+}
+
+function miTerceraFuncion() {
+  document.getElementById("demo").innerHTML += "El ratón ha salido del botón!<br>";
+}
+//http://www.mywonderland.es/curso_js/addevent/index.html
+
