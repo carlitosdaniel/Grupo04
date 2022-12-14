@@ -34,3 +34,12 @@ function mUp(obj) {
   obj.style.backgroundColor="#D94A38";
   obj.innerHTML="Gracias!!";
 }
+
+//Navegacion
+
+function nav() {
+  document.getElementById("id02").innerHTML = document.getElementById("id01").childNodes[0].nodeValue;
+  document.write("Mi primera")
+  
+  
+}
