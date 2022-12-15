@@ -51,50 +51,73 @@
       </header>
     </div><br><br>
 
-    <div class="main">
+    <h1 class="text-center">Animaciones DOM</h1>
+    <section id="header">
+      <div class="container mt-5">
+        <div class="row d-flex justify-content-center">
+          <div class=" col-md-6 col-sm-6">
 
-      <center>
-        <br>
-        <h1>Animaciones DOM</h1>
-        <br>
-      </center>
+            <h3>Dale estilo a los elementos</h3>
+            <br>
+            <p>El elemento contenedor debe crearse con estilo = <b>"position: relative"</b>.</p>
+            <p>El elemento de animación debe crearse con estilo = <b>"position: absolute"</b>.</p>
+            <h3><b>Código de animación</b></h3>
+            <p>Las animaciones de JavaScript se realizan mediante la programación de cambios graduales en el estilo de
+              un elemento.</p>
+            <p>Los cambios son llamados por un temporizador. Cuando el intervalo del temporizador es pequeño, la
+              animación parece continua.</p>
 
-      <div id="menu" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <p><b>Código</b></p>
-        <pre> 
-          <code>
-              function myMove() {
-                let id = null;
-                const elem = document.getElementById("animate");
-                let pos = 0;
-                clearInterval(id);
-                id = setInterval(frame, 5);
-                function frame() {
-                if (pos == 350) {
-                clearInterval(id);
-                } else {
-                pos++; 
-                elem.style.top = pos + "px";
-                elem.style.right = pos + "px"; 
-                  }
-                }
-              } 
-          </code> 
-      </pre>
-      </div>
-      <div id="contenido" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-        <div id="container">
-          <div id="animate"></div>
+            <br>
+          </div>
         </div>
-        <br>
-        <center><button type="submit" onclick="myMove()" class="btn btn-info">Intentalo ahora!!</button></center>
-        <p id="texto"></p>
       </div>
+    </section>
+
+    <section id="testimonio">
+      <div class="container">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <h4><b>Ejemplo de la Animacion completa</b></h4>
+        </div>
+        </p>
 
 
+        <div id="menu" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <p><b>Código</b></p>
+          <pre>
+            <code>
+                function myMove() {
+                  let id = null;
+                  const elem = document.getElementById("animate");
+                  let pos = 0;
+                  clearInterval(id);
+                  id = setInterval(frame, 5);
+                  function frame() {
+                  if (pos == 350) {
+                  clearInterval(id);
+                  } else {
+                  pos++; 
+                  elem.style.top = pos + "px";
+                  elem.style.right = pos + "px"; 
+                    }
+                  }
+                } 
+            </code> 
+        </pre>
+
+        </div>
+
+        <div id="contenido" class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+          <div id="container">
+            <div id="animate"></div>
+          </div>
+          <br>
+          <center><button type="submit" onclick="myMove()" class="btn btn-info">Intentalo ahora</button></center>
+          <p id="texto"></p>
+        </div>
+
+    </section>
 
 
-    </div>
   </main>
 
 
